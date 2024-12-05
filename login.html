@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMC Evaluation Site</title>
+</head>
+    <link rel="stylesheet" href="./logincss/login320.css">
+    <link rel="stylesheet" href="./logincss/login375.css">
+    <link rel="stylesheet" href="./logincss/login425.css">
+    <link rel="stylesheet" href="./logincss/login768.css">
+    <link rel="stylesheet" href="./logincss/login1024.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<body>
+    <header>
+        <div class="HEADERPARENT">
+            <div class="HEADERCHILD">
+                <img src="media/LOGO.png" alt="">
+            </div>
+            <div class="HEADERCHILD">
+                <h1>VILLAGERS MONTESSORI COLLEGE</h1>
+                <hr><p>TOTAL QUALITY EDUCATION, OUR THRUST</p>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="subheader">
+        <p>COLLEGE DEPARTMENT EVALUATION CITE</p>
+    </div>
+    <div class="content">
+        <div class="PARENTCONTENT">
+            <div class="CHILDCONTENT">
+                <div class="MARQUEE">
+                    <div class="marquee-content">
+                        <video src="media/Villagers Montessori College @38.mp4" autoplay loop muted></video>
+                        <img src="media/vmc building.jpg" alt="Image 1">
+                        <img src="media/library.jpeg" alt="Image 2">
+                        <img src="media/comlab.jpeg" alt="Image 3">
+                        <img src="media/sciencelab.jpeg" alt="Image 4">
+                        <img src="media/tle.jpeg" alt="Image 5">
+                    </div>
+                </div>
+            </div>
+            <div class="CHILDCONTENT">
+                <div class="form-container">
+                    <form action="">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required>
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="pwd" id="pwd" required>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" id="show-password" onclick="togglePassword('pwd', 'show-password')"> SHOW PASSWORD
+                            </label>
+                            <a href="#" class="forgot-password">FORGOT PASSWORD</a>
+                        </div>
+                        <button type="submit" class="login-btn">LOGIN</button>
+                        <div class="message" id="message">
+                        </div>
+                        <a href="form.html" class="signup-link">SIGNUP</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="FOOTERCONTENT">
+            <div class="FC">
+                <p>&copy; 2024 <a href="https://vmc.edu.ph/">Villagers Montessori College</a></p>
+            </div>
+            <div class="FC">
+                <p>vmceduph1983@gmail.com</p>
+            </div>
+            <div class="FC">
+                <p>Contact no:289290856</p>
+            </div>
+            <div class="FC">
+                <p>18 Dalsol St., Brgy. Sangandaan, Quezon City, Philippines</p>
+            </div>
+            <div class="FC">
+                <div class="SOCIALMEDIA">
+                    <div class="SM">
+                        <a href="https://www.facebook.com/villagersmontessoricollege1983?mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="SM">
+                        <a href="https://www.instagram.com/villagersmontessoriofficial"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="SM">
+                        <a href="https://www.youtube.com/@villagersmontessoricollege7075"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Get the password input and checkbox elements
+    const passwordInput = document.getElementById('pwd');
+    const showPasswordCheckbox = document.getElementById('show-password');
+
+    // Add event listener to the checkbox
+    showPasswordCheckbox.addEventListener('change', () => {
+        // Toggle the type attribute
+        passwordInput.type = showPasswordCheckbox.checked ? 'text' : 'password';
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const marqueeContent = document.querySelector(".marquee-content");
+    const originalItems = Array.from(marqueeContent.children);
+    const containerWidth = marqueeContent.parentElement.offsetWidth;
+    let contentWidth = 0;
+
+    // Calculate total width of existing items
+    originalItems.forEach(item => {
+        contentWidth += item.offsetWidth + parseFloat(getComputedStyle(item).marginRight);
+    });
+
+    // Duplicate content until it exceeds container width
+    while (contentWidth < containerWidth * 100) {
+        originalItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            marqueeContent.appendChild(clone);
+            contentWidth += item.offsetWidth + parseFloat(getComputedStyle(item).marginRight);
+        });
+    }
+});
+
+
+    </script>
+</body>
+</html>

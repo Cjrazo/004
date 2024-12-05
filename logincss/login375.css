@@ -1,0 +1,168 @@
+@media screen and (max-width: 375px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    html, body{
+        background-color:#5aaecd;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }   
+    .HEADERPARENT{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERPARENT h1{
+        font-size: 12px;
+    }
+    .HEADERPARENT p{
+        font-size: 8px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 4px;
+        padding: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .MARQUEE {
+        height: 200px; /* Set a fixed height for the marquee */
+        width: 90%; /* Full width for the marquee */
+        overflow: hidden; /* Hide any content that goes outside the container */
+        display: flex; /* Flexbox layout for horizontal alignment */
+        margin: 20px;
+    }
+    
+    .marquee-content {
+        display: flex;
+        width: 1000%; /* Adjust to accommodate 10 media items (10 * 100%) */
+        animation: scroll 50s linear infinite; /* Scroll all items in 60s */
+    }
+    
+    .marquee-content img,
+    .marquee-content video {
+        height: 100%; /* Make the image/video fit the container's height */
+        width: auto; /* Ensure the width adjusts to maintain the aspect ratio */
+        object-fit: cover; /* Ensures the content covers the container without distortion */
+        margin-right: 20px; /* Space between items */
+        border-radius: 10px;
+    }
+    
+    /* Keyframes for scrolling animation */
+    @keyframes scroll {
+        0% {
+            transform: translateX(0); /* Start from the beginning */
+        }
+        100% {
+            transform: translateX(-100%); /* Scroll to the left, beyond the last media */
+        }
+    }
+    
+    /* Ensure the content repeats seamlessly */
+    .marquee-content .item {
+        flex-shrink: 0;
+    }
+    
+    .form-container{
+        width: 80%;
+        background-color: #b3eaf4;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        margin: 10px auto;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"] {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 8px;
+    }
+    .options label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .options input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .forgot-password {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .forgot-password:hover {
+        text-decoration: underline;
+    }
+    .login-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-btn:hover {
+        background-color: #00a6c5;
+    }
+    .signup-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .signup-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 2px;
+    }
+}

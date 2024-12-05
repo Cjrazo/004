@@ -1,0 +1,593 @@
+@media screen and (max-width: 320px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }
+    .HEADERPARENT{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERPARENT h1{
+        font-size: 12px;
+    }
+    .HEADERPARENT p{
+        font-size: 8px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 4px;
+        padding: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .CHILDCONTENT video{
+        width: 95%;
+        margin: 10px;
+        border-radius: 10px;
+
+    }
+    .form-container{
+        background-color:  #b3eaf4;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options input[type="radio"]{
+        margin-right: 5px;
+    }
+    .options label{
+        font-size: 12px;
+    }
+    .signup-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10PX ;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }
+    .HEADERPARENT{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERPARENT h1{
+        font-size: 12px;
+    }
+    .HEADERPARENT p{
+        font-size: 8px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 12px;
+        padding: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .CHILDCONTENT video{
+        width: 95%;
+        margin: 10px;
+        border-radius: 10px;
+
+    }
+    .form-container{
+        background-color:  #b3eaf4;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options input[type="radio"]{
+        margin-right: 5px;
+    }
+    .options label{
+        font-size: 12px;
+    }
+    .signup-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10PX ;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }
+    .HEADERPARENT{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERPARENT h1{
+        font-size: 12px;
+    }
+    .HEADERPARENT p{
+        font-size: 8px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 12px;
+        padding: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .CHILDCONTENT video{
+        width: 95%;
+        margin: 10px;
+        border-radius: 10px;
+
+    }
+    .form-container{
+        background-color:  #b3eaf4;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options input[type="radio"]{
+        margin-right: 5px;
+    }
+    .options label{
+        font-size: 12px;
+    }
+    .signup-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10PX ;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }
+    .HEADERPARENT{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERCHILD{
+        margin: 15px;
+    }
+    .HEADERPARENT h1{
+        font-size: 16px;
+    }
+    .HEADERPARENT p{
+        font-size: 12px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 12px;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .CHILDCONTENT video{
+        width: 90%;
+        margin: 15px;
+        border-radius: 10px;
+    }
+    .PARENTCONTENT{
+        justify-content: center;
+        display: flex;
+    }
+    .CHILDCONTENT{
+        width: 50%;
+    }
+    .form-container{
+        background-color:  #b3eaf4;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options input[type="radio"]{
+        margin-right: 5px;
+    }
+    .options label{
+        font-size: 12px;
+    }
+    .signup-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10PX ;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .FC{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 2px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    header{
+        background-color: whitesmoke;
+        padding: 5px;
+        border: 1px solid black;
+    }
+    header img{
+        width: 100px;
+    }
+    .HEADERPARENT{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .HEADERCHILD{
+        margin: 15px;
+    }
+    .HEADERPARENT h1{
+        font-size: 20px;
+    }
+    .HEADERPARENT p{
+        font-size: 16px;
+    }
+    .subheader{
+        background-color: #b3eaf4;
+        color: black;
+        margin: 12px;
+        padding: 12px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .CHILDCONTENT video{
+        width: 90%;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .PARENTCONTENT{
+        justify-content: center;
+        display: flex;
+    }
+    .CHILDCONTENT{
+        width: 50%;
+    }
+    .form-container{
+        background-color:  #b3eaf4;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    .form-container label {
+        display: block;
+        font-weight: bold;
+        margin: 10px 0 5px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="password"]{
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .options input[type="radio"]{
+        margin-right: 5px;
+    }
+    .options label{
+        font-size: 12px;
+    }
+    .signup-btn {
+        background-color: #00c4e8;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 10PX ;
+        font-size: 14px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .login-link {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .login-link:hover {
+        text-decoration: underline;
+    }
+    footer{
+        background-color: whitesmoke;
+        padding: 10px;
+        font-size: 12px;
+    }
+    footer a{
+        color: black;
+    }
+    .FOOTERCONTENT{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+    }
+    .SOCIALMEDIA{
+        justify-content: left;
+        align-items: center;
+        display: flex;
+    }
+    .SM{
+        margin: 5px;
+    }
+}
+

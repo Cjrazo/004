@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMC Evaluation Site</title>
+</head>
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<body>
+    <header>
+        <div class="HEADERPARENT">
+            <div class="HEADERCHILD">
+                <img src="media/LOGO.png" alt="">
+            </div>
+            <div class="HEADERCHILD">
+                <h1>VILLAGERS MONTESSORI COLLEGE</h1>
+                <hr><p>TOTAL QUALITY EDUCATION, OUR THRUST</p>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="subheader">
+        <p>COLLEGE DEPARTMENT EVALUATION CITE</p>
+    </div>
+    <div class="content">
+        <div class="PARENTCONTENT">
+            <div class="CHILDCONTENT">
+                <video src="media/Villagers Montessori College @38.mp4" autoplay muted loop></video>
+            </div>
+            <div class="CHILDCONTENT">
+                <div class="form-container">
+                    <form action="users.php" onsubmit="return checkPasswords()">
+                        <label for="studentname">Name of the Student:</label>
+                        <input type="text" name="studentname" id="studentname" required>
+                        <label for="studentno">Student No.</label>
+                        <input type="text" name="studentname" id="studentname" required>
+                        <label for="program">Program:</label>
+                        <div class="options">
+                            <label for="ed">
+                                <input type="radio" id="ed" name="program" value="ed" required>College of Education
+                            </label>
+                            <label for="ba">
+                                <input type="radio" id="ba" name="program" value="ba">College of Business Administration
+                            </label>
+                            <label for="hm">
+                                <input type="radio" id="hm" name="program" value="hm">College of Hospitality Management
+                            </label>
+                            <label for="tm">
+                                <input type="radio" id="tm" name="program" value="tm">College of Tourism Management
+                            </label>
+                            <label for="is">
+                                <input type="radio" id="is" name="program" value="is">College of Information System
+                            </label>
+                            <label for="pa">
+                                <input type="radio" id="pa" name="program" value="pa">College of Public Administration
+                            </label>
+                        </div>
+                        <br>
+                        <label for="yearlevel">Year Level:</label>
+                        <div class="options">
+                            <label for="first">
+                                <input type="radio" id="first" name="yearlevel" value="first" required>First Year
+                            </label>
+                            <label for="second">
+                                <input type="radio" id="second" name="yearlevel" value="second">Second Year
+                            </label>
+                            <label for="third">
+                                <input type="radio" id="third" name="yearlevel" value="third">Third Year
+                            </label>
+                            <label for="fourth">
+                                <input type="radio" id="fourth" name="yearlevel" value="fourth">Fourth Year
+                            </label>
+                        </div>
+                        <br>
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required>
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="pwd" id="pwd" required>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" id="show-password" onclick="togglePassword('pwd', 'show-password')"> SHOW PASSWORD
+                            </label>
+                        </div>
+                
+                        <label for="pwd1">Re-enter Password:</label>
+                        <input type="password" name="pwd1" id="pwd1" required>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox" id="show-password1" onclick="togglePassword('pwd1', 'show-password1')"> SHOW PASSWORD
+                            </label>
+                        </div>
+                        <button type="submit" class="signup-btn">SIGNUP</button>
+                        <div class="message" id="message">
+                        </div>
+                        <a href="login.html" class="login-link">LOGIN</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="FOOTERCONTENT">
+            <div class="FC">
+                <p>&copy; 2024 <a href="https://vmc.edu.ph/">Villagers Montessori College</a></p>
+            </div>
+            <div class="FC">
+                <p>vmceduph1983@gmail.com</p>
+            </div>
+            <div class="FC">
+                <p>Contact no:289290856</p>
+            </div>
+            <div class="FC">
+                <p>18 Dalsol St., Brgy. Sangandaan, Quezon City, Philippines</p>
+            </div>
+            <div class="FC">
+                <div class="SOCIALMEDIA">
+                    <div class="SM">
+                        <a href="https://www.facebook.com/villagersmontessoricollege1983?mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="SM">
+                        <a href="https://www.instagram.com/villagersmontessoriofficial"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="SM">
+                        <a href="https://www.youtube.com/@villagersmontessoricollege7075"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function to toggle password visibility
+        function togglePassword(passwordFieldId, checkboxId) {
+            const passwordField = document.getElementById(passwordFieldId);
+            const checkbox = document.getElementById(checkboxId);
+            // Toggle the password field type
+            passwordField.type = checkbox.checked ? "text" : "password";
+        }
+        // Function to check if passwords match
+        function checkPasswords() {
+            const password = document.getElementById('pwd').value;
+            const confirmPassword = document.getElementById('pwd1').value;
+
+            if (password === confirmPassword) {
+                alert("Passwords match!"); // Success pop-up
+                return true; // Allow form submission
+            } else {
+                alert("Passwords do not match. Please try again."); // Error pop-up
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>
